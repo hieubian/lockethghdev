@@ -1,0 +1,18 @@
+{
+  "framework": "vite",
+  "installCommand": "npm install",
+  "buildCommand": "npm run build -w main",
+  "outputDirectory": "apps/main/dist",
+
+  "rewrites": [
+    { "source": "/proxy/auth/:path*", "destination": "/api/proxy?host=auth.locket-dio.com&path=:path*" },
+    { "source": "/proxy/data/:path*", "destination": "/api/proxy?host=data.locket-dio.com&path=:path*" },
+    { "source": "/proxy/base/:path*", "destination": "/api/proxy?host=api.locket-dio.com&path=:path*" },
+    { "source": "/proxy/payment/:path*", "destination": "/api/proxy?host=payment.locket-dio.com&path=:path*" },
+    { "source": "/proxy/storage/:path*", "destination": "/api/proxy?host=storage.locket-dio.com&path=:path*" },
+    { "source": "/proxy/media/:path*", "destination": "/api/proxy?host=media.locket-dio.com&path=:path*" },
+    { "source": "/proxy/cdn/:path*", "destination": "/api/proxy?host=cdn.locket-dio.com&path=:path*" },
+    { "source": "/socket.io/:path*", "destination": "/api/socket?socketPath=:path*" },
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}

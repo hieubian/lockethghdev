@@ -1,0 +1,63 @@
+import { useEffect, useState } from "react";
+import { checkIfRunningAsPWA } from "@/utils/logic/checkIfRunningAsPWA";
+
+export const useNavigation = () => {
+  const [isProfileOpen, setIsProfileOpen] = useState(false);
+  const [isHomeOpen, setIsHomeOpen] = useState(false);
+  const [isBottomOpen, setIsBottomOpen] = useState(false);
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isFriendsTabOpen, setFriendsTabOpen] = useState(false);
+  const [isSettingTabOpen, setSettingTabOpen] = useState(false);
+  const [isToolsOpen, setIsToolsOpen] = useState(false);
+  const [toolsActiveTab, setToolsActiveTab] = useState("custom-crush");
+  const [isOptionModalOpen, setOptionModalOpen] = useState(false);
+  const [isFriendHistoryOpen, setFriendHistoryOpen] = useState(false);
+  const [isFullview, setIsFullview] = useState(() => {
+    const saved = localStorage.getItem("isFullview");
+    return saved === "true";
+  });
+  const [isPWA, setIsPWA] = useState(() => {
+    const saved = localStorage.getItem("isPWA");
+    return saved === "true";
+  });
+
+  // Lưu vào localStorage khi isFullview thay đổi
+  useEffect(() => {
+    localStorage.setItem("isFullview", isFullview);
+    localStorage.setItem("isPWA", isPWA);
+  }, [isFullview, isPWA]);
+
+  // Tự động phát hiện nếu đang chạy dưới dạng PWA
+  useEffect(() => {
+    const isPWA = checkIfRunningAsPWA();
+    if (isPWA) {
+      setIsFullview(true);
+      setIsPWA(true);
+    }
+  }, []);
+
+  return {
+    isProfileOpen,
+    setIsProfileOpen,
+    isHomeOpen,
+    setIsHomeOpen,
+    isSidebarOpen,
+    setIsSidebarOpen,
+    isFilterOpen,
+    setIsFilterOpen,
+    isBottomOpen,
+    setIsBottomOpen,
+    isFriendsTabOpen,
+    setFriendsTabOpen,
+    isOptionModalOpen, setOptionModalOpen,
+    isFullview,
+    setIsFullview,
+    isSettingTabOpen,
+    setSettingTabOpen,
+    isPWA, setIsPWA,
+    isFriendHistoryOpen, setFriendHistoryOpen,
+    isToolsOpen, setIsToolsOpen,
+    toolsActiveTab, setToolsActiveTab
+  };
+};

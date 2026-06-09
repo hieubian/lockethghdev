@@ -1,0 +1,460 @@
+[
+  {
+    "method": "POST",
+    "requestBody": {
+      "data": {
+        "excluded_users": [],
+        "fetch_streak": true,
+        "should_count_missed_moments": true
+      }
+    },
+    "responseBody": {
+      "result": {
+        "data": [
+          {
+            "canonical_uid": "C8htt1bORNOwGU0Fs4n3",
+            "date": {
+              "_nanoseconds": 192000000,
+              "_seconds": 1780798389
+            },
+            "md5": "788e4c4653407c75709b6087754658b9",
+            "overlays": [
+              {
+                "alt_text": "=)))))))))))))))))",
+                "data": {
+                  "background": {
+                    "colors": [],
+                    "material_blur": "ultra_thin"
+                  },
+                  "icon": {
+                    "data": "https://cdn.locket-dio.com/v1/caption/caption-gif/banana-crying-cat.gif",
+                    "source": "url",
+                    "type": "image"
+                  },
+                  "max_lines": 1,
+                  "text": "=)))))))))))))))))",
+                  "text_color": "#FFFFFF",
+                  "type": "static_content"
+                },
+                "overlay_id": "caption:good_night",
+                "overlay_type": "caption"
+              }
+            ],
+            "thumbnail_url": "https://firebasestorage.googleapis.com/v0/b/locket-img/o/users%2FyxY4Dv4FLkRVeFWdkVADcEstADJ3%2Fmoments%2Fthumbnails%2FVM6GIc8W1qexo6UZGlM4.webp?alt=media&token=d483d935-3769-4b01-b710-90c7d1587dc0",
+            "user": "yxY4Dv4FLkRVeFWdkVADcEstADJ3"
+          }
+        ],
+        "missed_moments_count": 0,
+        "status": 200,
+        "streak": {
+          "count": 5,
+          "last_updated_yyyymmdd": 20260607,
+          "past_streak": {
+            "count": 10,
+            "last_updated_yyyymmdd": 20260601
+          }
+        },
+        "sync_token": "C8htt1bORNOwGU0Fs4n3"
+      }
+    },
+    "responseStatus": 200,
+    "source": "https://locket.hgh.io.vn/locket",
+    "timestamp": "2026-06-07T03:39:23.976Z",
+    "url": "https://api.locketcamera.com/getLatestMomentV2"
+  },
+  {
+    "method": "POST",
+    "requestBody": {
+      "data": {
+        "moment_uid": "yU1yuMEMtq4OSKkD1d2h"
+      }
+    },
+    "responseBody": {
+      "result": {
+        "data": {
+          "count": 0,
+          "moment_views": []
+        },
+        "status": 200
+      }
+    },
+    "responseStatus": 200,
+    "source": "https://locket.hgh.io.vn/locket",
+    "timestamp": "2026-06-07T03:39:26.638Z",
+    "url": "https://api.locketcamera.com/getMomentViews"
+  },
+  {
+    "method": "POST",
+    "requestBody": {
+      "data": {
+        "moment_uid": "piIuHzjhWruXIHPjeDPn"
+      }
+    },
+    "responseBody": {
+      "result": {
+        "data": {
+          "count": 0,
+          "moment_views": []
+        },
+        "status": 200
+      }
+    },
+    "responseStatus": 200,
+    "source": "https://locket.hgh.io.vn/locket",
+    "timestamp": "2026-06-07T03:39:38.424Z",
+    "url": "https://api.locketcamera.com/getMomentViews"
+  },
+  {
+    "method": "POST",
+    "requestBody": {
+      "data": {
+        "moment_uid": "hrldWOpMYffaOoGBugmp"
+      }
+    },
+    "responseBody": {
+      "result": {
+        "data": {
+          "count": 0,
+          "moment_views": []
+        },
+        "status": 200
+      }
+    },
+    "responseStatus": 200,
+    "source": "https://locket.hgh.io.vn/locket",
+    "timestamp": "2026-06-07T03:39:51.819Z",
+    "url": "https://api.locketcamera.com/getMomentViews"
+  },
+  {
+    "method": "POST",
+    "requestBody": {
+      "data": {
+        "moment_uid": "yU1yuMEMtq4OSKkD1d2h"
+      }
+    },
+    "responseBody": {
+      "result": {
+        "data": {
+          "count": 0,
+          "moment_views": []
+        },
+        "status": 200
+      }
+    },
+    "responseStatus": 200,
+    "source": "https://locket.hgh.io.vn/locket",
+    "timestamp": "2026-06-07T03:40:09.637Z",
+    "url": "https://api.locketcamera.com/getMomentViews"
+  },
+  {
+    "method": "POST",
+    "requestBody": {
+      "data": {
+        "moment_uid": "vBtkH4iZZuWk7Pd8ev9o"
+      }
+    },
+    "responseBody": {
+      "result": {
+        "data": {
+          "count": 7,
+          "moment_views": [
+            {
+              "user": "EG5P9LITZtfTXek0LyWe0yCXF1K2",
+              "viewed_at": {
+                "_nanoseconds": 651000000,
+                "_seconds": 1780795568
+              }
+            },
+            {
+              "user": "hNCQoDxjnsMsTzi6B0BBKxPNeyC2",
+              "viewed_at": {
+                "_nanoseconds": 859000000,
+                "_seconds": 1780770993
+              }
+            },
+            {
+              "user": "HyV5esyoK9RhTPgqSLoa8JX3IQ62",
+              "viewed_at": {
+                "_nanoseconds": 553000000,
+                "_seconds": 1780770759
+              }
+            },
+            {
+              "user": "1ezFJT2sFBRW2rtkAXRTmSDuV8g1",
+              "viewed_at": {
+                "_nanoseconds": 892000000,
+                "_seconds": 1780768706
+              }
+            },
+            {
+              "user": "CFtG341J4xS7q6QMeoCF4YDpm7J2",
+              "viewed_at": {
+                "_nanoseconds": 117000000,
+                "_seconds": 1780767182
+              }
+            },
+            {
+              "user": "yxY4Dv4FLkRVeFWdkVADcEstADJ3",
+              "viewed_at": {
+                "_nanoseconds": 920000000,
+                "_seconds": 1780766695
+              }
+            },
+            {
+              "user": "rDSBVR0YucTFmzKswNU4vDFXvl03",
+              "viewed_at": {
+                "_nanoseconds": 419000000,
+                "_seconds": 1780766419
+              }
+            }
+          ]
+        },
+        "status": 200
+      }
+    },
+    "responseStatus": 200,
+    "source": "https://locket.hgh.io.vn/locket",
+    "timestamp": "2026-06-07T03:40:15.524Z",
+    "url": "https://api.locketcamera.com/getMomentViews"
+  },
+  {
+    "method": "POST",
+    "requestBody": {
+      "contentType": "image/jpeg",
+      "filename": "locketdio_1780803634725_UYIYv9loQdaHj35cfatrVoHnvin1_cliBeta1.0.8.jpg",
+      "size": 518145,
+      "type": "image",
+      "uploadedAt": "2026-06-07T03:40:34.725Z"
+    },
+    "responseBody": {
+      "data": {
+        "downloadURL": "https://media.locket-dio.com/LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/lUL52sBDX5gqhm2iTgXW.jpeg",
+        "expiresIn": 300,
+        "fileName": "LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/lUL52sBDX5gqhm2iTgXW.jpeg",
+        "key": "LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/lUL52sBDX5gqhm2iTgXW.jpeg",
+        "mediaSignature": "71c293a27d001ba3d1c2186d270bc40df061605dd0fce0a62a9d500be11953e0",
+        "name": "lUL52sBDX5gqhm2iTgXW.jpeg",
+        "path": "LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/lUL52sBDX5gqhm2iTgXW.jpeg",
+        "publicURL": "https://media.locket-dio.com/LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/lUL52sBDX5gqhm2iTgXW.jpeg",
+        "publicUrl": "https://media.locket-dio.com/LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/lUL52sBDX5gqhm2iTgXW.jpeg",
+        "size": 518145,
+        "type": "image",
+        "uploadUrl": "https://locket-dio-cloud.044e22dcd4a4ea7241bf947970bbc155.r2.cloudflarestorage.com/LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/lUL52sBDX5gqhm2iTgXW.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=56227ba8163e77f5d85ebb7823c64598%2F20260607%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260607T034038Z&X-Amz-Expires=300&X-Amz-Signature=6d8aa36a01b75ff6f9a8c5deb5229171f650b935c52130ec3dea1363292541cc&X-Amz-SignedHeaders=host&x-amz-acl=public-read&x-amz-checksum-crc32=AAAAAA%3D%3D&x-amz-sdk-checksum-algorithm=CRC32&x-id=PutObject",
+        "uploadedAt": "2026-06-07T03:40:34.725Z"
+      },
+      "message": "Presigned URL generated successfully",
+      "meta": {
+        "me": "u not admin",
+        "note": "Use this URL only once — it will expire in 5 minutes!",
+        "u": "UYIYv9loQdaHj35cfatrVoHnvin1",
+        "uk": "null because this is not a user-specific action"
+      },
+      "status": "success"
+    },
+    "responseStatus": 200,
+    "source": "https://locket.hgh.io.vn/locket",
+    "timestamp": "2026-06-07T03:40:35.873Z",
+    "url": "/proxy/storage/api/presignedV3"
+  },
+  {
+    "method": "PUT",
+    "requestBody": "Binary/Unknown data",
+    "responseBody": "",
+    "responseStatus": 200,
+    "source": "https://locket.hgh.io.vn/locket",
+    "timestamp": "2026-06-07T03:40:38.773Z",
+    "url": "/api/proxyUpload?url=https%3A%2F%2Flocket-dio-cloud.044e22dcd4a4ea7241bf947970bbc155.r2.cloudflarestorage.com%2FLocketCloud%2FBeta1.0.8%2FD-07-06-26%2Fimage%2FUYIYv9loQdaHj35cfatrVoHnvin1%2FlUL52sBDX5gqhm2iTgXW.jpeg%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Content-Sha256%3DUNSIGNED-PAYLOAD%26X-Amz-Credential%3D56227ba8163e77f5d85ebb7823c64598%252F20260607%252Fauto%252Fs3%252Faws4_request%26X-Amz-Date%3D20260607T034038Z%26X-Amz-Expires%3D300%26X-Amz-Signature%3D6d8aa36a01b75ff6f9a8c5deb5229171f650b935c52130ec3dea1363292541cc%26X-Amz-SignedHeaders%3Dhost%26x-amz-acl%3Dpublic-read%26x-amz-checksum-crc32%3DAAAAAA%253D%253D%26x-amz-sdk-checksum-algorithm%3DCRC32%26x-id%3DPutObject"
+  },
+  {
+    "method": "POST",
+    "requestBody": {
+      "contentType": "image/jpeg",
+      "filename": "locketdio_1780803664752_UYIYv9loQdaHj35cfatrVoHnvin1_cliBeta1.0.8.jpg",
+      "size": 518253,
+      "type": "image",
+      "uploadedAt": "2026-06-07T03:41:04.752Z"
+    },
+    "responseBody": {
+      "data": {
+        "downloadURL": "https://media.locket-dio.com/LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/nDFbLQO7uOxDV8ZYZlCv.jpeg",
+        "expiresIn": 300,
+        "fileName": "LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/nDFbLQO7uOxDV8ZYZlCv.jpeg",
+        "key": "LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/nDFbLQO7uOxDV8ZYZlCv.jpeg",
+        "mediaSignature": "c8068647fa0818c798c743e59aa812665d439e0d2f868f6fdf5776ece62e024f",
+        "name": "nDFbLQO7uOxDV8ZYZlCv.jpeg",
+        "path": "LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/nDFbLQO7uOxDV8ZYZlCv.jpeg",
+        "publicURL": "https://media.locket-dio.com/LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/nDFbLQO7uOxDV8ZYZlCv.jpeg",
+        "publicUrl": "https://media.locket-dio.com/LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/nDFbLQO7uOxDV8ZYZlCv.jpeg",
+        "size": 518253,
+        "type": "image",
+        "uploadUrl": "https://locket-dio-cloud.044e22dcd4a4ea7241bf947970bbc155.r2.cloudflarestorage.com/LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/nDFbLQO7uOxDV8ZYZlCv.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=56227ba8163e77f5d85ebb7823c64598%2F20260607%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260607T034107Z&X-Amz-Expires=300&X-Amz-Signature=c96953735d780a485d03c613efee80c34fe61f201774cc0c31eeb9d861f7dd1f&X-Amz-SignedHeaders=host&x-amz-acl=public-read&x-amz-checksum-crc32=AAAAAA%3D%3D&x-amz-sdk-checksum-algorithm=CRC32&x-id=PutObject",
+        "uploadedAt": "2026-06-07T03:41:04.752Z"
+      },
+      "message": "Presigned URL generated successfully",
+      "meta": {
+        "me": "u not admin",
+        "note": "Use this URL only once — it will expire in 5 minutes!",
+        "u": "UYIYv9loQdaHj35cfatrVoHnvin1",
+        "uk": "null because this is not a user-specific action"
+      },
+      "status": "success"
+    },
+    "responseStatus": 200,
+    "source": "https://locket.hgh.io.vn/locket",
+    "timestamp": "2026-06-07T03:41:05.347Z",
+    "url": "/proxy/storage/api/presignedV3"
+  },
+  {
+    "method": "PUT",
+    "requestBody": "Binary/Unknown data",
+    "responseBody": "",
+    "responseStatus": 200,
+    "source": "https://locket.hgh.io.vn/locket",
+    "timestamp": "2026-06-07T03:41:07.482Z",
+    "url": "/api/proxyUpload?url=https%3A%2F%2Flocket-dio-cloud.044e22dcd4a4ea7241bf947970bbc155.r2.cloudflarestorage.com%2FLocketCloud%2FBeta1.0.8%2FD-07-06-26%2Fimage%2FUYIYv9loQdaHj35cfatrVoHnvin1%2FnDFbLQO7uOxDV8ZYZlCv.jpeg%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Content-Sha256%3DUNSIGNED-PAYLOAD%26X-Amz-Credential%3D56227ba8163e77f5d85ebb7823c64598%252F20260607%252Fauto%252Fs3%252Faws4_request%26X-Amz-Date%3D20260607T034107Z%26X-Amz-Expires%3D300%26X-Amz-Signature%3Dc96953735d780a485d03c613efee80c34fe61f201774cc0c31eeb9d861f7dd1f%26X-Amz-SignedHeaders%3Dhost%26x-amz-acl%3Dpublic-read%26x-amz-checksum-crc32%3DAAAAAA%253D%253D%26x-amz-sdk-checksum-algorithm%3DCRC32%26x-id%3DPutObject"
+  },
+  {
+    "method": "POST",
+    "requestBody": {
+      "contentType": "image/jpeg",
+      "filename": "locketdio_1780803675651_UYIYv9loQdaHj35cfatrVoHnvin1_cliBeta1.0.8.jpg",
+      "size": 518253,
+      "type": "image",
+      "uploadedAt": "2026-06-07T03:41:15.651Z"
+    },
+    "responseBody": {
+      "data": {
+        "downloadURL": "https://media.locket-dio.com/LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/um4O9Q6CKR9H0tUxsARf.jpeg",
+        "expiresIn": 300,
+        "fileName": "LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/um4O9Q6CKR9H0tUxsARf.jpeg",
+        "key": "LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/um4O9Q6CKR9H0tUxsARf.jpeg",
+        "mediaSignature": "4ed2337b2ff948843ee4ab649ce7c843b9a7f0e9d316143dc9d8f58ee89b405d",
+        "name": "um4O9Q6CKR9H0tUxsARf.jpeg",
+        "path": "LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/um4O9Q6CKR9H0tUxsARf.jpeg",
+        "publicURL": "https://media.locket-dio.com/LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/um4O9Q6CKR9H0tUxsARf.jpeg",
+        "publicUrl": "https://media.locket-dio.com/LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/um4O9Q6CKR9H0tUxsARf.jpeg",
+        "size": 518253,
+        "type": "image",
+        "uploadUrl": "https://locket-dio-cloud.044e22dcd4a4ea7241bf947970bbc155.r2.cloudflarestorage.com/LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/um4O9Q6CKR9H0tUxsARf.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=56227ba8163e77f5d85ebb7823c64598%2F20260607%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260607T034119Z&X-Amz-Expires=300&X-Amz-Signature=4e246d85e9aee9e30197da08eb2f6ed48b45e6fd9c3786d9b83b708eb87dca22&X-Amz-SignedHeaders=host&x-amz-acl=public-read&x-amz-checksum-crc32=AAAAAA%3D%3D&x-amz-sdk-checksum-algorithm=CRC32&x-id=PutObject",
+        "uploadedAt": "2026-06-07T03:41:15.651Z"
+      },
+      "message": "Presigned URL generated successfully",
+      "meta": {
+        "me": "u not admin",
+        "note": "Use this URL only once — it will expire in 5 minutes!",
+        "u": "UYIYv9loQdaHj35cfatrVoHnvin1",
+        "uk": "null because this is not a user-specific action"
+      },
+      "status": "success"
+    },
+    "responseStatus": 200,
+    "source": "https://locket.hgh.io.vn/locket",
+    "timestamp": "2026-06-07T03:41:16.720Z",
+    "url": "/proxy/storage/api/presignedV3"
+  },
+  {
+    "method": "PUT",
+    "requestBody": "Binary/Unknown data",
+    "responseBody": "",
+    "responseStatus": 200,
+    "source": "https://locket.hgh.io.vn/locket",
+    "timestamp": "2026-06-07T03:41:18.771Z",
+    "url": "/api/proxyUpload?url=https%3A%2F%2Flocket-dio-cloud.044e22dcd4a4ea7241bf947970bbc155.r2.cloudflarestorage.com%2FLocketCloud%2FBeta1.0.8%2FD-07-06-26%2Fimage%2FUYIYv9loQdaHj35cfatrVoHnvin1%2Fum4O9Q6CKR9H0tUxsARf.jpeg%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Content-Sha256%3DUNSIGNED-PAYLOAD%26X-Amz-Credential%3D56227ba8163e77f5d85ebb7823c64598%252F20260607%252Fauto%252Fs3%252Faws4_request%26X-Amz-Date%3D20260607T034119Z%26X-Amz-Expires%3D300%26X-Amz-Signature%3D4e246d85e9aee9e30197da08eb2f6ed48b45e6fd9c3786d9b83b708eb87dca22%26X-Amz-SignedHeaders%3Dhost%26x-amz-acl%3Dpublic-read%26x-amz-checksum-crc32%3DAAAAAA%253D%253D%26x-amz-sdk-checksum-algorithm%3DCRC32%26x-id%3DPutObject"
+  },
+  {
+    "method": "POST",
+    "requestBody": {
+      "contentType": "image/jpeg",
+      "filename": "locketdio_1780803684580_UYIYv9loQdaHj35cfatrVoHnvin1_cliBeta1.0.8.jpg",
+      "size": 518253,
+      "type": "image",
+      "uploadedAt": "2026-06-07T03:41:24.580Z"
+    },
+    "responseBody": {
+      "data": {
+        "downloadURL": "https://media.locket-dio.com/LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/2zq5k4m0KdHH5WCgAuHt.jpeg",
+        "expiresIn": 300,
+        "fileName": "LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/2zq5k4m0KdHH5WCgAuHt.jpeg",
+        "key": "LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/2zq5k4m0KdHH5WCgAuHt.jpeg",
+        "mediaSignature": "1865eee08825dec1420580044d0a7604774bfd79644bc1396a1084359d8312e1",
+        "name": "2zq5k4m0KdHH5WCgAuHt.jpeg",
+        "path": "LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/2zq5k4m0KdHH5WCgAuHt.jpeg",
+        "publicURL": "https://media.locket-dio.com/LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/2zq5k4m0KdHH5WCgAuHt.jpeg",
+        "publicUrl": "https://media.locket-dio.com/LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/2zq5k4m0KdHH5WCgAuHt.jpeg",
+        "size": 518253,
+        "type": "image",
+        "uploadUrl": "https://locket-dio-cloud.044e22dcd4a4ea7241bf947970bbc155.r2.cloudflarestorage.com/LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/2zq5k4m0KdHH5WCgAuHt.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=56227ba8163e77f5d85ebb7823c64598%2F20260607%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260607T034128Z&X-Amz-Expires=300&X-Amz-Signature=986169a06da1217a046fac19959280a027d7643d3ac66bd9a64c5acc2b8fad27&X-Amz-SignedHeaders=host&x-amz-acl=public-read&x-amz-checksum-crc32=AAAAAA%3D%3D&x-amz-sdk-checksum-algorithm=CRC32&x-id=PutObject",
+        "uploadedAt": "2026-06-07T03:41:24.580Z"
+      },
+      "message": "Presigned URL generated successfully",
+      "meta": {
+        "me": "u not admin",
+        "note": "Use this URL only once — it will expire in 5 minutes!",
+        "u": "UYIYv9loQdaHj35cfatrVoHnvin1",
+        "uk": "null because this is not a user-specific action"
+      },
+      "status": "success"
+    },
+    "responseStatus": 200,
+    "source": "https://locket.hgh.io.vn/locket",
+    "timestamp": "2026-06-07T03:41:25.653Z",
+    "url": "/proxy/storage/api/presignedV3"
+  },
+  {
+    "method": "PUT",
+    "requestBody": "Binary/Unknown data",
+    "responseBody": "",
+    "responseStatus": 200,
+    "source": "https://locket.hgh.io.vn/locket",
+    "timestamp": "2026-06-07T03:41:27.704Z",
+    "url": "/api/proxyUpload?url=https%3A%2F%2Flocket-dio-cloud.044e22dcd4a4ea7241bf947970bbc155.r2.cloudflarestorage.com%2FLocketCloud%2FBeta1.0.8%2FD-07-06-26%2Fimage%2FUYIYv9loQdaHj35cfatrVoHnvin1%2F2zq5k4m0KdHH5WCgAuHt.jpeg%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Content-Sha256%3DUNSIGNED-PAYLOAD%26X-Amz-Credential%3D56227ba8163e77f5d85ebb7823c64598%252F20260607%252Fauto%252Fs3%252Faws4_request%26X-Amz-Date%3D20260607T034128Z%26X-Amz-Expires%3D300%26X-Amz-Signature%3D986169a06da1217a046fac19959280a027d7643d3ac66bd9a64c5acc2b8fad27%26X-Amz-SignedHeaders%3Dhost%26x-amz-acl%3Dpublic-read%26x-amz-checksum-crc32%3DAAAAAA%253D%253D%26x-amz-sdk-checksum-algorithm%3DCRC32%26x-id%3DPutObject"
+  },
+  {
+    "method": "POST",
+    "requestBody": {
+      "contentType": "image/jpeg",
+      "filename": "locketdio_1780803710405_UYIYv9loQdaHj35cfatrVoHnvin1_cliBeta1.0.8.jpg",
+      "size": 518253,
+      "type": "image",
+      "uploadedAt": "2026-06-07T03:41:50.405Z"
+    },
+    "responseBody": {
+      "data": {
+        "downloadURL": "https://media.locket-dio.com/LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/2Gz1LLNKqDJsP7KU73Ma.jpeg",
+        "expiresIn": 300,
+        "fileName": "LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/2Gz1LLNKqDJsP7KU73Ma.jpeg",
+        "key": "LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/2Gz1LLNKqDJsP7KU73Ma.jpeg",
+        "mediaSignature": "6b790bb6e5de0e6ce5f1399ea602ae02fa9540c52c2d2277429a0600a7ce3a03",
+        "name": "2Gz1LLNKqDJsP7KU73Ma.jpeg",
+        "path": "LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/2Gz1LLNKqDJsP7KU73Ma.jpeg",
+        "publicURL": "https://media.locket-dio.com/LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/2Gz1LLNKqDJsP7KU73Ma.jpeg",
+        "publicUrl": "https://media.locket-dio.com/LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/2Gz1LLNKqDJsP7KU73Ma.jpeg",
+        "size": 518253,
+        "type": "image",
+        "uploadUrl": "https://locket-dio-cloud.044e22dcd4a4ea7241bf947970bbc155.r2.cloudflarestorage.com/LocketCloud/Beta1.0.8/D-07-06-26/image/UYIYv9loQdaHj35cfatrVoHnvin1/2Gz1LLNKqDJsP7KU73Ma.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=56227ba8163e77f5d85ebb7823c64598%2F20260607%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260607T034153Z&X-Amz-Expires=300&X-Amz-Signature=06ba89c9241666566654f9d29375b7c21092f901f88a46f066d1794ab29311ac&X-Amz-SignedHeaders=host&x-amz-acl=public-read&x-amz-checksum-crc32=AAAAAA%3D%3D&x-amz-sdk-checksum-algorithm=CRC32&x-id=PutObject",
+        "uploadedAt": "2026-06-07T03:41:50.405Z"
+      },
+      "message": "Presigned URL generated successfully",
+      "meta": {
+        "me": "u not admin",
+        "note": "Use this URL only once — it will expire in 5 minutes!",
+        "u": "UYIYv9loQdaHj35cfatrVoHnvin1",
+        "uk": "null because this is not a user-specific action"
+      },
+      "status": "success"
+    },
+    "responseStatus": 200,
+    "source": "https://locket.hgh.io.vn/locket",
+    "timestamp": "2026-06-07T03:41:51.521Z",
+    "url": "/proxy/storage/api/presignedV3"
+  },
+  {
+    "method": "PUT",
+    "requestBody": "Binary/Unknown data",
+    "responseBody": "",
+    "responseStatus": 200,
+    "source": "https://locket.hgh.io.vn/locket",
+    "timestamp": "2026-06-07T03:41:53.712Z",
+    "url": "/api/proxyUpload?url=https%3A%2F%2Flocket-dio-cloud.044e22dcd4a4ea7241bf947970bbc155.r2.cloudflarestorage.com%2FLocketCloud%2FBeta1.0.8%2FD-07-06-26%2Fimage%2FUYIYv9loQdaHj35cfatrVoHnvin1%2F2Gz1LLNKqDJsP7KU73Ma.jpeg%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Content-Sha256%3DUNSIGNED-PAYLOAD%26X-Amz-Credential%3D56227ba8163e77f5d85ebb7823c64598%252F20260607%252Fauto%252Fs3%252Faws4_request%26X-Amz-Date%3D20260607T034153Z%26X-Amz-Expires%3D300%26X-Amz-Signature%3D06ba89c9241666566654f9d29375b7c21092f901f88a46f066d1794ab29311ac%26X-Amz-SignedHeaders%3Dhost%26x-amz-acl%3Dpublic-read%26x-amz-checksum-crc32%3DAAAAAA%253D%253D%26x-amz-sdk-checksum-algorithm%3DCRC32%26x-id%3DPutObject"
+  }
+]

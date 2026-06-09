@@ -1,0 +1,350 @@
+import { create } from "zustand";
+import { persist } from "zustand/middleware";
+
+export const CAMERA_THEMES = [
+  {
+    id: "default",
+    name: "Locket Trắng",
+    primaryColor: "#00c3ff",
+    background: "var(--color-base-100)",
+  },
+  {
+    id: "sakura",
+    name: "Hoa Anh Đào",
+    primaryColor: "#ff4d6d",
+    background: "linear-gradient(to bottom, #ffd1dc 0%, #ffdfd3 100%)",
+  },
+  {
+    id: "miku",
+    name: "Miku Ngọc Bích",
+    primaryColor: "#008080",
+    background: "linear-gradient(to bottom, #86cecb 0%, #b5e8e6 100%)",
+  },
+  {
+    id: "rem",
+    name: "Rem Biển Ngọt",
+    primaryColor: "#2a52be",
+    background: "linear-gradient(to bottom, #b2c2e8 0%, #e6f0fa 100%)",
+  },
+  {
+    id: "nezuko",
+    name: "Nezuko Hồng",
+    primaryColor: "#dc143c",
+    background: "linear-gradient(to bottom, #ffc0cb 0%, #ffb6b9 100%)",
+  },
+  {
+    id: "klee",
+    name: "Klee Nắng",
+    primaryColor: "#e63946",
+    background: "linear-gradient(to bottom, #fcf4dd 0%, #ffe699 100%)",
+  },
+  {
+    id: "violet",
+    name: "Tím Thơ Mộng",
+    primaryColor: "#8a2be2",
+    background: "linear-gradient(to bottom, #e6e6fa 0%, #fffacd 100%)",
+  },
+  {
+    id: "sailor",
+    name: "Thuỷ Thủ Mặt Trăng",
+    primaryColor: "#ff00ff",
+    background: "linear-gradient(to bottom, #ffdde1 0%, #ffffba 100%)",
+  },
+  {
+    id: "strawberry",
+    name: "Sữa Dâu",
+    primaryColor: "#e0115f",
+    background: "linear-gradient(to bottom, #fff0f5 0%, #ffb6c1 100%)",
+  },
+  {
+    id: "peach",
+    name: "Đào Tiên",
+    primaryColor: "#ff7f50",
+    background: "linear-gradient(to bottom, #ffdab9 0%, #fffdd0 100%)",
+  },
+  {
+    id: "lavender",
+    name: "Giấc Mơ Lavender",
+    primaryColor: "#663399",
+    background: "linear-gradient(to bottom, #e6e6fa 0%, #b0e0e6 100%)",
+  },
+  {
+    id: "mint",
+    name: "Kẹo Bạc Hà",
+    primaryColor: "#008b8b",
+    background: "linear-gradient(to bottom, #d4fc79 0%, #96e6a1 100%)",
+  },
+  {
+    id: "sunset",
+    name: "Hoàng Hôn Cam",
+    primaryColor: "#ff4500",
+    background: "linear-gradient(to bottom, #ffb347 0%, #ffcc33 100%)",
+  },
+  {
+    id: "cotton",
+    name: "Kẹo Bông Gòn",
+    primaryColor: "#ff69b4",
+    background: "linear-gradient(to bottom, #ffb7b2 0%, #e2f0cb 100%)",
+  },
+  {
+    id: "fairy",
+    name: "Bụi Tiên",
+    primaryColor: "#c71585",
+    background: "linear-gradient(to bottom, #dda0dd 0%, #ffc0cb 100%)",
+  },
+  {
+    id: "matcha",
+    name: "Trà Xanh Matcha",
+    primaryColor: "#228b22",
+    background: "linear-gradient(to bottom, #d0f0c0 0%, #fffff0 100%)",
+  },
+  {
+    id: "lemonade",
+    name: "Chanh Mát Rượi",
+    primaryColor: "#daa520",
+    background: "linear-gradient(to bottom, #fff44f 0%, #ffffe0 100%)",
+  },
+  {
+    id: "blueberry",
+    name: "Sữa Chua Việt Quất",
+    primaryColor: "#000080",
+    background: "linear-gradient(to bottom, #ccccff 0%, #b0e0e6 100%)",
+  },
+  {
+    id: "rosegold",
+    name: "Vàng Hồng Lấp Lánh",
+    primaryColor: "#b76e79",
+    background: "linear-gradient(to bottom, #f4c2c2 0%, #ffd700 100%)",
+  },
+  {
+    id: "rainbow",
+    name: "Cầu Vồng Pastel",
+    primaryColor: "#ff1493",
+    background: "linear-gradient(to bottom, #ff9a9e 0%, #fecfef 50%, #f6e27a 100%)",
+  },
+  {
+    id: "gold_luxury",
+    name: "Luxury Gold",
+    primaryColor: "#d4af37",
+    background: "linear-gradient(to bottom, #fffbf0 0%, #f7ebd0 100%)",
+  },
+  {
+    id: "golden_sands",
+    name: "Cát Vàng Óng Ánh",
+    primaryColor: "#e5a93b",
+    background: "linear-gradient(to bottom, #fffdf5 0%, #faecd1 100%)",
+  },
+  {
+    id: "imperial_gold",
+    name: "Hoàng Kim Vương Giả",
+    primaryColor: "#cda232",
+    background: "linear-gradient(to bottom, #fdfaf2 0%, #f4e9cc 100%)",
+  },
+  {
+    id: "mystic_gold",
+    name: "Vàng Huyền Bí",
+    primaryColor: "#ffca28",
+    background: "linear-gradient(to bottom, #16120b 0%, #302613 100%)",
+  },
+  {
+    id: "mystic_night",
+    name: "Đêm Huyền Bí",
+    primaryColor: "#9c27b0",
+    background: "linear-gradient(to bottom, #0e0b16 0%, #211c35 100%)",
+  },
+  {
+    id: "purple_monarch",
+    name: "Hồ Điệp Tím",
+    primaryColor: "#aa00ff",
+    background: "linear-gradient(to bottom, #fbf0ff 0%, #ebd0fa 100%)",
+  },
+  {
+    id: "royal_ruby",
+    name: "Đỏ Hồng Kỷ Niệm",
+    primaryColor: "#e91e63",
+    background: "linear-gradient(to bottom, #fff0f5 0%, #ffc0cb 100%)",
+  },
+  {
+    id: "sunset_gold",
+    name: "Vàng Hoàng Hôn",
+    primaryColor: "#ff9100",
+    background: "linear-gradient(to bottom, #fff8f0 0%, #ffe0b2 100%)",
+  },
+  {
+    id: "sky_blue",
+    name: "Trời Xanh Thẳm",
+    primaryColor: "#00b0ff",
+    background: "linear-gradient(to bottom, #e1f5fe 0%, #b3e5fc 100%)",
+  },
+  {
+    id: "emerald_breeze",
+    name: "Gió Ngọc Lục Bảo",
+    primaryColor: "#00e676",
+    background: "linear-gradient(to bottom, #e8f5e9 0%, #c8e6c9 100%)",
+  },
+  {
+    id: "pearl_white",
+    name: "Ngọc Trai Quý Phái",
+    primaryColor: "#b0bec5",
+    background: "linear-gradient(to bottom, #ffffff 0%, #eceff1 100%)",
+  },
+  {
+    id: "rose_quartz",
+    name: "Thạch Anh Hồng",
+    primaryColor: "#ff80ab",
+    background: "linear-gradient(to bottom, #fff6f9 0%, #f8bbd0 100%)",
+  },
+  {
+    id: "lemon_gold",
+    name: "Vàng Chanh",
+    primaryColor: "#ffd600",
+    background: "linear-gradient(to bottom, #fffff0 0%, #fff9c4 100%)",
+  },
+  {
+    id: "coral_crush",
+    name: "San Hô Ấm Áp",
+    primaryColor: "#ff6d00",
+    background: "linear-gradient(to bottom, #fff3e0 0%, #ffe0b2 100%)",
+  },
+  {
+    id: "platinum_shine",
+    name: "Ánh Bạch Kim",
+    primaryColor: "#78909c",
+    background: "linear-gradient(to bottom, #fafafa 0%, #cfd8dc 100%)",
+  },
+  {
+    id: "deep_abyss",
+    name: "Đại Dương Sâu",
+    primaryColor: "#00b0ff",
+    background: "linear-gradient(to bottom, #020a18 0%, #0d2040 100%)",
+  },
+  {
+    id: "cyberpunk_dark",
+    name: "Cyberpunk Tối",
+    primaryColor: "#ff007f",
+    background: "linear-gradient(to bottom, #0c0214 0%, #2c0740 100%)",
+  },
+  {
+    id: "tiffany_blue",
+    name: "Xanh Tiffany Quý Phái",
+    primaryColor: "#00bfa5",
+    background: "linear-gradient(to bottom, #e0f2f1 0%, #b2dfdb 100%)",
+  },
+  {
+    id: "lavender_dream",
+    name: "Giấc Mơ Lavender Sáng",
+    primaryColor: "#7c4dff",
+    background: "linear-gradient(to bottom, #f3e5f5 0%, #e1bee7 100%)",
+  },
+  {
+    id: "aurora_glow",
+    name: "Hào Quang Bắc Cực",
+    primaryColor: "#00e5ff",
+    background: "linear-gradient(to bottom, #e0f7fa 0%, #b2ebf2 100%)",
+  },
+  {
+    id: "neon_lime",
+    name: "Chanh Neon",
+    primaryColor: "#39ff14",
+    background: "linear-gradient(to bottom, #091a05 0%, #184c0c 100%)",
+  },
+  {
+    id: "electric_blue",
+    name: "Xanh Điện Tử",
+    primaryColor: "#00f0ff",
+    background: "linear-gradient(to bottom, #000c1a 0%, #002b5c 100%)",
+  },
+  {
+    id: "acid_yellow",
+    name: "Vàng Acid",
+    primaryColor: "#ccff00",
+    background: "linear-gradient(to bottom, #141a00 0%, #3d4f00 100%)",
+  },
+  {
+    id: "hot_pink_neon",
+    name: "Hồng Neon Rực Rỡ",
+    primaryColor: "#ff007f",
+    background: "linear-gradient(to bottom, #1d000f 0%, #52002b 100%)",
+  },
+  {
+    id: "toxic_purple",
+    name: "Tím Độc Lạ",
+    primaryColor: "#b026ff",
+    background: "linear-gradient(to bottom, #11021c 0%, #360559 100%)",
+  },
+  {
+    id: "cyber_orange",
+    name: "Cam Cyberpunk",
+    primaryColor: "#ff5e00",
+    background: "linear-gradient(to bottom, #1c0a00 0%, #541e00 100%)",
+  },
+  {
+    id: "laser_green",
+    name: "Tia Laser Xanh",
+    primaryColor: "#00ffcc",
+    background: "linear-gradient(to bottom, #001f19 0%, #005c4b 100%)",
+  },
+  {
+    id: "pluto_indigo",
+    name: "Sao Diêm Vương",
+    primaryColor: "#7b2cbf",
+    background: "linear-gradient(to bottom, #0a0118 0%, #24054a 100%)",
+  },
+  {
+    id: "volcano_red",
+    name: "Dung Nham Neon",
+    primaryColor: "#ff3333",
+    background: "linear-gradient(to bottom, #1f0505 0%, #5c0f0f 100%)",
+  },
+  {
+    id: "mint_cyber",
+    name: "Bạc Hà Tương Lai",
+    primaryColor: "#5afad6",
+    background: "linear-gradient(to bottom, #071c17 0%, #154c3e 100%)",
+  },
+  {
+    id: "genshin_raiden",
+    name: "Lôi Thần Raiden (Genshin)",
+    primaryColor: "#a370f7",
+    background: "linear-gradient(to bottom, #140d24 0%, #351c59 100%)",
+  },
+  {
+    id: "genshin_zhongli",
+    name: "Nham Thần Zhongli (Genshin)",
+    primaryColor: "#e5a93b",
+    background: "linear-gradient(to bottom, #1a150d 0%, #443216 100%)",
+  },
+  {
+    id: "genshin_hutao",
+    name: "Hu Tao Pyro (Genshin)",
+    primaryColor: "#ff4d4d",
+    background: "linear-gradient(to bottom, #1d0a0b 0%, #401012 100%)",
+  },
+  {
+    id: "genshin_furina",
+    name: "Thủy Thần Furina (Genshin)",
+    primaryColor: "#4fc3f7",
+    background: "linear-gradient(to bottom, #e0f7fa 0%, #006064 100%)",
+  },
+  {
+    id: "genshin_nahida",
+    name: "Thảo Thần Nahida (Genshin)",
+    primaryColor: "#81c784",
+    background: "linear-gradient(to bottom, #f1f8e9 0%, #c5e1a5 100%)",
+  },
+];
+
+export const useThemeStore = create(
+  persist(
+    (set) => ({
+      currentThemeId: "sky_blue",
+      setCurrentThemeId: (id) => set({ currentThemeId: id }),
+      isThemeSelectorOpen: false,
+      setThemeSelectorOpen: (isOpen) => set({ isThemeSelectorOpen: isOpen }),
+    }),
+    {
+      name: "locket-theme-storage",
+      partialize: (state) => ({ currentThemeId: state.currentThemeId }), // Only persist currentThemeId
+    }
+  )
+);
